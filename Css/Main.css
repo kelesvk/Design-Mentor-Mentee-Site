@@ -1,0 +1,806 @@
+/* General Settings */
+
+@font-face{/* Sayfada kullanılan fontu ve özelliklerini ayarladık*/
+    font-family:'Montserrat';
+    src: url('../font/Montserrat-Regular.ttf'); 
+}
+body{/* Sayfada kullanılan fontu ve özelliklerini ayarladık*/
+    background: white;/* Sayfa renk özelliklerini ayarladık*/
+    color: #5c5c5c;
+    font: 14px / 28px ;
+    font-family: 'Montserrat', arial;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sectionHeader{
+    background: transparent;
+    border-bottom: 5px solid #5c5c5c;
+        height: 100px;
+        color: #5c5c5c;
+        display: inline-block;
+        line-height: 150px;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin-bottom: 50px;;
+        
+}
+
+.sectionArea{
+padding: 50px 0px;
+
+}
+
+
+
+
+/* Grid Settings*/ /*Sayfanın genel tasarımını düzenliyooruz*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.ustalarBody .container, .dmmFarkBody .container , .bilgiKutuBody .container{
+    justify-content: space-between;
+}
+.uyeYorumBody .container{
+    justify-content: space-between;
+}
+    
+.ustalarBody a{
+    
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5c5c5c;  
+}
+
+.ustalarBody a p{
+    background: #5c5c5c;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px;
+    display: inline-block;
+    transition: all .5s ease;
+}
+
+.ustalarBody a p:hover{
+    background: #5201b6;
+}
+
+/* Ana Sayfa Settings*/
+header .logo{
+   margin-right: auto; 
+}
+header .logo img{
+display: block;
+margin: 10px 0px 10px 0px;
+/*height: 70px;*/
+}
+
+.menu li{
+    float: left;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.menu li a{
+    padding: 30px 15px;
+    display: block;
+    text-decoration: none;
+    color: #5c5c5c;
+    transition: all .5s ease;
+    font-weight: bold;
+    
+
+}
+.menu li:hover a{
+    background:#5c5c5c ;
+    color: white;
+    }
+
+.menu2 li{
+    float: left;
+}
+.menu2 li a{
+    padding: 18px 5px;
+    display: block;
+    text-decoration: none;
+
+
+}
+.menu2 li a p{
+    color: white;
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.menu2 li a p:hover{
+    background: #57837B;
+}
+
+.menu2 li a:last-child{
+    padding-right: 0;
+}
+.menu3 li{
+    float: left;
+}
+.menu3 li a{
+    padding: 18px 5px;
+    display: block;
+    text-decoration: none;
+
+
+}
+.menu3 li a p{
+    color: white;
+    background: #5c5c5c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.menu3 li a p:hover{
+    background: #8D2828;
+}
+
+.menu3 li a:last-child{
+    padding-right: 0;
+}
+.dFazMenu{
+    display: none;
+}
+
+#mainSlider{
+    height: 700px;
+    background: url('../img/Slider1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.Slider{
+    width: 100%;
+}
+
+#mainCaption{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.Caption{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.Caption h1{
+color: #5201b6;
+font-weight: bolder;
+line-height: 0.6;
+}
+
+.Caption a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5201b6;
+    
+}
+
+.Caption a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.Caption a p:hover{
+    background: #5c5c5c;
+}
+
+.ustalarTop{
+    text-align: center;
+}
+.dmmFarkTop{
+    text-align: center;
+}
+.uyeYorumTop{
+    text-align: center;
+}
+
+.item{
+    width: 200px;
+    height: 350px;
+    padding: 30px;
+    background: #5c5c5c;
+    border-radius: 15px;
+}
+
+.itemsBorder{
+    border-right: 5px solid #5c5c5c ;
+    border-left: 5px solid #5c5c5c ;
+    padding: 0px 115px;
+    
+}
+
+ .ustalarContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .8s ease;
+}
+.item .itemText{
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #5c5c5c;
+    color: white;
+}
+.item:hover .zoom img{
+    transform: scale(1.10);
+}
+.itemText h3{
+    
+    padding: 10px;
+    transition: all .5s ease;
+}
+.item:hover h3{
+    color: #FFD523;
+    transform: scale(1.10);
+}
+
+/*Fark*/
+#dmmFarkMain{
+    height: 700px;
+    background: url('../img/farklarArkaplan.png') center center no-repeat;
+    background-size: cover;
+}
+
+.dmmFarkBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+
+}
+.farkParagraf{
+    text-align: center;
+    margin-top: 70px;
+    padding: 0px 440px;
+    font-weight: normal;
+}
+/*Fark*/
+
+/*Daha Fazlası Buton*/
+.moore{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mooreParagraf a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.mooreParagraf a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.mooreParagraf a p:hover{
+    background: #5c5c5c;
+}
+/*Daha Fazlası Buton*/
+
+
+#bilgiKutu{
+    
+    height: 700px;
+    background: #faf6ff;
+    background-size: cover;
+    
+}
+.bilgiKutuContainer{
+    position: relative;
+    width: 92%;
+    
+    
+}
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;
+   
+    
+}
+.colTop3{
+    flex-grow: 1;
+    width: 33.33%;
+    margin-top: 100px;
+    
+}
+.colBot3{
+    flex-grow: 1;
+    width: 33.33%;
+    margin-top: 50px;
+}
+.bilgiKutuOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5c5c5c;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    border-radius: 9px;
+    opacity: 95%;
+    transition: .9s ease;
+}
+
+.bilgiKutuContainer:hover .bilgiKutuOverlay{
+    width: 100%;
+}
+
+.bilgiKutuText{
+    white-space: nowrap;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bilgiKutuText p{
+    text-align: center;
+}
+.yorumContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemYorum{
+    
+    height: 150px;
+    width: 300px;
+    padding: 30px;
+    background: #5201b6;
+    border-radius: 15px;
+}
+
+.itemYorum3{
+    display: block;
+    margin-right: 100px;
+
+}
+.yorumContentKisi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.zoomYorum h3 h4{
+    margin-top: 30px;
+}
+
+
+.uyeYorumText{  
+    color:white; 
+}
+footer{
+    
+    background-color: #5c5c5c;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footerItem {
+    padding: 20px;
+}
+
+
+.footerLinks a{
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    transition: .5 ease;
+    font-weight: bold;
+    margin-top: 20px;
+  
+}
+.footerLinks a:hover{
+    color: #5201b6;
+}
+.footerLinks li{
+    text-align: left;
+    margin-left: 250px;
+}
+
+.footerLinksImg{
+    transition: .5 ease;
+    line-height: 80px;
+}
+
+ .instaFooter:hover, .linkedinFooter:hover, .twitterFooter:hover{
+    transform: scale(1.10);
+    
+}
+.footerLinksImg li{
+    display:inline-block;
+    margin-top: 30px;
+    width: 20px;
+    padding: 30px;
+
+}
+.footerLogo{
+    margin-top: 40px;
+}
+.footerP{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/*----------------HAKKIMIZDA--------------*/
+
+#mainHakkimizda{
+    height: 700px;
+    background: url('../img/hakkimizda1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.hSlider{
+    width: 100%;
+}
+
+#mainCaptionHak{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.CaptionHak{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   margin-top: 150px;
+    width: 100%;
+}
+
+.CaptionHak h1{
+color: #5201b6;
+font-weight: bolder;
+line-height: 0.6;
+
+}
+
+.CaptionHak a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5201b6;
+    
+}
+
+.CaptionHak a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.CaptionHak a p:hover{
+    background: #5c5c5c;
+}
+
+
+/*----------------HAKKIMIZDA2--------------*/
+#mainHakkimizda2{
+    height: 700px;
+    background: url('../img/hakkimizda2.png') center center no-repeat;
+    background-size: cover;
+}
+
+.hSlider2{
+    width: 100%;
+}
+
+#mainCaptionHak2{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.CaptionHak2{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.CaptionHak2 h1{
+color: #5201b6;
+font-weight: bolder;
+line-height: 0.6;
+
+
+}
+
+.CaptionHak2 a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5201b6;
+    
+}
+
+.CaptionHak2 a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.CaptionHak2 a p:hover{
+    background: #5c5c5c;
+}
+#mainHakkimizda3{
+    height: 700px;
+    background: url('../img/hakkimizda3.png') center center no-repeat;
+    background-size: cover;
+}
+#mainHakkimizda4{
+    height: 700px;
+    background: url('../img/hakkimizda4.png') center center no-repeat;
+    background-size: cover;
+}
+#mainHakkimizda5{
+    height: 700px;
+    background: url('../img/hakkimizda5.png') center center no-repeat;
+    background-size: cover;
+}
+
+
+
+/* GİRİŞ SAYFASI*/
+/*
+#mainGiris{
+    height: 800px;
+    background: url('../img/girisyap.png') center center no-repeat;
+    background-size: cover;
+}
+
+.gSlider{
+    width: 100%;
+}
+
+#mainCaptionGiris{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.CaptionGiris{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.CaptionGiris h1{
+color: #5201b6;
+font-weight: bolder;
+line-height: 0.6;
+
+
+}
+
+.CaptionGiris a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5201b6;
+    
+}
+
+.CaptionGiris a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.CaptionGiris a p:hover{
+    background: #5c5c5c;
+}
+
+.gTextBox{
+    margin-top: 30px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   KAYIT OL  */
+#mainKayit{
+    height: 800px;
+    background: url('../img/kayıtol.png') center center no-repeat;
+    background-size: cover;
+}
+
+.kSlider{
+    width: 100%;
+}
+
+#mainCaptionKayit{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.CaptionKayit{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.CaptionKayit h1{
+color: #5c5c5c;
+font-weight: bolder;
+line-height: 0.6;
+
+
+}
+
+.CaptionKayit a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5c5c5c;
+    
+}
+
+
+.CaptionKayit a p{
+    background: #5c5c5c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.CaptionKayit a p:hover{
+    background: #5201b6;
+}
+
+.kTextBox{
+    margin-top: 30px;
+}
+
+/*BLOG SAYFASI*/
+#mainBlog{
+    height: 700px;
+    background: url('../img/dmmBlog.png') center center no-repeat;
+    background-size: cover;
+}
+
+.bSlider{
+    width: 100%;
+}
+
+#mainCaptionBlog{
+    height: 700px;
+    background: rgba(0,0,0 .5);
+}
+
+.CaptionBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.CaptionBlog h1{
+color: #5201b6;
+font-weight: bolder;
+line-height: 0.6;
+
+
+}
+
+.CaptionBlog a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #5201b6;
+    
+}
+
+.CaptionBlog a p{
+    background: #5201b6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px ;
+    margin-top: 30px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease;
+}
+.CaptionBlog a p:hover{
+    background: #5c5c5c;
+}
